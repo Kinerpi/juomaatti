@@ -1,3 +1,4 @@
-# Juomaatti
+# juomaatti
 
-OAMK kes„harjoitteluprojekti
+
+KESÃ„ 2019 J&J inc.
