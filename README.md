@@ -1,8 +1,4 @@
 # juomaatti
 
-asdffd
 
-asdffd
-
-
-asdffd
+KESÄ 2019 J&J inc.
