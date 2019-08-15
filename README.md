@@ -1,1 +1,3 @@
-# juomaatti
+# Juomaatti
+
+OAMK kes„harjoitteluprojekti
