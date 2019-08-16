@@ -64,7 +64,7 @@ const long PUMPPAUS_AIKA = 2000;
 const int TOLPPA_ASENNOT[4][5] {
   //       0      90     180     270
   {0  ,  0  ,    0  ,    0  ,    0}, //Tyhjä tarkoituksella
-  {0  , 12  ,   34  ,   53  ,   74}, //Tolppa 1
+  {0  ,  0  ,   20  ,   40  ,   60}, //Tolppa 1
   {0  ,  1  ,   19  ,   40  ,   58}, //Tolppa 2
   {0  ,  0  ,   16  ,   35  ,   55}, //Tolppa 3
 };
@@ -474,7 +474,7 @@ void loop() {
 
   void testi(){
     // 1.
-    delay(1000);
+  /* delay(1000);
 
     aikaVanha = millis();
     digitalWrite(MOOTTORI_VASEN, HIGH);
@@ -536,94 +536,99 @@ void loop() {
 
     // 4.
 
-    delay(1000);
+    delay(1000);  */
 /*
     // ____________________---Karuselli 1.---_____________________________
     Serial.println("Karuselli pyörähtää 4 eri positiota.");
-    AKTIIVINEN_SERVO.write(TOLPPA_ASENNOT[0][0]);
+    AKTIIVINEN_SERVO.write(TOLPPA_ASENNOT[1][1]);
     AKTIIVINEN_SERVO.attach(TOLPPA1_SERVO);
     delay(5000);
 
 
-    AKTIIVINEN_SERVO.write(TOLPPA_ASENNOT[0][1]);
-    AKTIIVINEN_SERVO.attach(TOLPPA1_SERVO);
-    delay(5000);
-    AKTIIVINEN_SERVO.detach();
-
-
-    AKTIIVINEN_SERVO.write(TOLPPA_ASENNOT[0][2]);
+    AKTIIVINEN_SERVO.write(TOLPPA_ASENNOT[1][2]);
     AKTIIVINEN_SERVO.attach(TOLPPA1_SERVO);
     delay(5000);
     AKTIIVINEN_SERVO.detach();
 
 
-    AKTIIVINEN_SERVO.write(TOLPPA_ASENNOT[0][3]);
+    AKTIIVINEN_SERVO.write(TOLPPA_ASENNOT[1][3]);
     AKTIIVINEN_SERVO.attach(TOLPPA1_SERVO);
     delay(5000);
     AKTIIVINEN_SERVO.detach();
 
-    AKTIIVINEN_SERVO.write(TOLPPA_ASENNOT[0][0]);
+
+    AKTIIVINEN_SERVO.write(TOLPPA_ASENNOT[1][4]);
+    AKTIIVINEN_SERVO.attach(TOLPPA1_SERVO);
+    delay(5000);
+    AKTIIVINEN_SERVO.detach();
+    delay(1200);
+
+    AKTIIVINEN_SERVO.write(TOLPPA_ASENNOT[1][1]);
     AKTIIVINEN_SERVO.attach(TOLPPA1_SERVO);
     delay(8200);
     AKTIIVINEN_SERVO.detach();
+    delay(1200);
 */
     /// ____________________---Karuselli 2.---_____________________________
     Serial.println("Karuselli 2 pyörähtää 4 eri positiota.");
-    AKTIIVINEN_SERVO.write(TOLPPA_ASENNOT[1][0]);
-    AKTIIVINEN_SERVO.attach(TOLPPA2_SERVO);
-    delay(8200);
-
-    delay(500);
-    AKTIIVINEN_SERVO.write(TOLPPA_ASENNOT[1][1]);
-    AKTIIVINEN_SERVO.attach(TOLPPA2_SERVO);
-    delay(3000);
-    AKTIIVINEN_SERVO.detach();
-
-    delay(500);
-    AKTIIVINEN_SERVO.write(TOLPPA_ASENNOT[1][2]);
-    AKTIIVINEN_SERVO.attach(TOLPPA2_SERVO);
-    delay(3000);
-    AKTIIVINEN_SERVO.detach();
-
-    delay(500);
-    AKTIIVINEN_SERVO.write(TOLPPA_ASENNOT[1][3]);
-    AKTIIVINEN_SERVO.attach(TOLPPA2_SERVO);
-    delay(3000);
-    AKTIIVINEN_SERVO.detach();
-
-    AKTIIVINEN_SERVO.write(TOLPPA_ASENNOT[1][0]);
-    AKTIIVINEN_SERVO.attach(TOLPPA2_SERVO);
-    delay(8200);
-    AKTIIVINEN_SERVO.detach();
-
-    // ____________________---Karuselli 3.---_____________________________
-    Serial.println("Karuselli 3 pyörähtää 4 eri positiota.");
-    AKTIIVINEN_SERVO.write(TOLPPA_ASENNOT[2][0]);
-    AKTIIVINEN_SERVO.attach(TOLPPA3_SERVO);
-    delay(8200);
-
-    delay(500);
     AKTIIVINEN_SERVO.write(TOLPPA_ASENNOT[2][1]);
-    AKTIIVINEN_SERVO.attach(TOLPPA3_SERVO);
-    delay(3000);
-    AKTIIVINEN_SERVO.detach();
+    AKTIIVINEN_SERVO.attach(TOLPPA2_SERVO);
+    delay(8200);
 
     delay(500);
     AKTIIVINEN_SERVO.write(TOLPPA_ASENNOT[2][2]);
-    AKTIIVINEN_SERVO.attach(TOLPPA3_SERVO);
+    AKTIIVINEN_SERVO.attach(TOLPPA2_SERVO);
     delay(3000);
     AKTIIVINEN_SERVO.detach();
 
     delay(500);
     AKTIIVINEN_SERVO.write(TOLPPA_ASENNOT[2][3]);
+    AKTIIVINEN_SERVO.attach(TOLPPA2_SERVO);
+    delay(3000);
+    AKTIIVINEN_SERVO.detach();
+
+    delay(500);
+    AKTIIVINEN_SERVO.write(TOLPPA_ASENNOT[2][4]);
+    AKTIIVINEN_SERVO.attach(TOLPPA2_SERVO);
+    delay(3000);
+    AKTIIVINEN_SERVO.detach();
+    delay(1200);
+
+    AKTIIVINEN_SERVO.write(TOLPPA_ASENNOT[2][1]);
+    AKTIIVINEN_SERVO.attach(TOLPPA2_SERVO);
+    delay(8200);
+    AKTIIVINEN_SERVO.detach();
+    delay(1200);
+    // ____________________---Karuselli 3.---_____________________________
+    Serial.println("Karuselli 3 pyörähtää 4 eri positiota.");
+    AKTIIVINEN_SERVO.write(TOLPPA_ASENNOT[3][1]);
+    AKTIIVINEN_SERVO.attach(TOLPPA3_SERVO);
+    delay(8200);
+
+    delay(500);
+    AKTIIVINEN_SERVO.write(TOLPPA_ASENNOT[3][2]);
     AKTIIVINEN_SERVO.attach(TOLPPA3_SERVO);
     delay(3000);
     AKTIIVINEN_SERVO.detach();
 
-    AKTIIVINEN_SERVO.write(TOLPPA_ASENNOT[2][0]);
+    delay(500);
+    AKTIIVINEN_SERVO.write(TOLPPA_ASENNOT[3][3]);
+    AKTIIVINEN_SERVO.attach(TOLPPA3_SERVO);
+    delay(3000);
+    AKTIIVINEN_SERVO.detach();
+
+    delay(500);
+    AKTIIVINEN_SERVO.write(TOLPPA_ASENNOT[3][4]);
+    AKTIIVINEN_SERVO.attach(TOLPPA3_SERVO);
+    delay(3000);
+    AKTIIVINEN_SERVO.detach();
+    delay(1200);
+
+    AKTIIVINEN_SERVO.write(TOLPPA_ASENNOT[3][1]);
     AKTIIVINEN_SERVO.attach(TOLPPA3_SERVO);
     delay(8200);
     AKTIIVINEN_SERVO.detach();
+    delay(1200);
     /*
     // 5.
     pumppaa(PUMPPU4);
