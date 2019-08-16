@@ -30,7 +30,7 @@ int lastButtonstate = 1;
 
 //
 unsigned long aikaVanha;
-const long aikaMax = 10000;
+const long aikaMax = 15000;
 
 
 /*
