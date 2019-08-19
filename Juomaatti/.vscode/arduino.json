@@ -1,0 +1,7 @@
+{
+    "sketch": "..\\Juomaatti\\Juomaatti.ino",
+    "board": "arduino:avr:mega",
+    "output": "../../build-juomaatti",
+    "configuration": "cpu=atmega2560",
+    "port": "COM3"
+}

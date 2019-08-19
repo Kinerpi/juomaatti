@@ -1,0 +1,6 @@
+{
+    "sketch": "Juoppo_Juomaatin_Testaaja.ino",
+    "output": "../../build-juoppo",
+    "board": "arduino:avr:uno",
+    "port": "COM6"
+}
