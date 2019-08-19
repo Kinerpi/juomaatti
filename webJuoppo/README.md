@@ -11,4 +11,6 @@ Käyttö:
 pip install flask
 py JUOPPO.py
 ```
+![webJuoppo](https://i.imgur.com/aAYByFy.png)
+
 - Painele nappeja
