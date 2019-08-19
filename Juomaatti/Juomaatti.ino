@@ -66,7 +66,7 @@ const int TOLPPA_ASENNOT[4][5] {
   {0  ,  0  ,    0  ,    0  ,    0}, //Tyhjä tarkoituksella
   {0  ,  0  ,   20  ,   40  ,   60}, //Tolppa 1
   {0  ,  1  ,   19  ,   40  ,   58}, //Tolppa 2
-  {0  ,  0  ,   16  ,   35  ,   55}, //Tolppa 3
+  {0  ,  0  ,   16  ,   34  ,   55}, //Tolppa 3
 };
 
 const int TOLPPA_SERVOT[4] {
@@ -474,7 +474,7 @@ void loop() {
 
   void testi(){
     // 1.
-  /* delay(1000);
+  delay(1000);
 
     aikaVanha = millis();
     digitalWrite(MOOTTORI_VASEN, HIGH);
@@ -536,7 +536,7 @@ void loop() {
 
     // 4.
 
-    delay(1000);  */
+    delay(1000);  
 /*
     // ____________________---Karuselli 1.---_____________________________
     Serial.println("Karuselli pyörähtää 4 eri positiota.");
