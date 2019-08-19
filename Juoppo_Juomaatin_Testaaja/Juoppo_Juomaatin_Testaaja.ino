@@ -14,6 +14,7 @@ const int io1 = 2,
 
 const int output[]{io1,io2,io4};
 
+int done = 1;
 int input;
 
 void setup() {
@@ -30,7 +31,9 @@ void setup() {
 
 void loop() {
   digitalWrite(exe, 1);
-  while(digitalRead(busy)){delay(100);Serial.println(Serial.available());};
+  while(digitalRead(busy)){done = 1;};
+  if (done == 1){Serial.println("Waiting for input");}
+  done = 0;
   if (Serial.available() > 0){
     input = Serial.parseInt();
     if(0 < input && input < 8){
