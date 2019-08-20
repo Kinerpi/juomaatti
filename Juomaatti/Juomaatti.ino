@@ -66,7 +66,7 @@ const int TOLPPA_ASENNOT[4][5] {
   {0  ,  0  ,    0  ,    0  ,    0}, //Tyhjä tarkoituksella
   {0  ,  0  ,   20  ,   40  ,   60}, //Tolppa 1
   {0  ,  1  ,   19  ,   40  ,   58}, //Tolppa 2
-  {0  ,  0  ,   16  ,   34  ,   55}, //Tolppa 3
+  {0  ,  0  ,   18  ,   34  ,   54}, //Tolppa 3
 };
 
 const int TOLPPA_SERVOT[4] {
